@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | D' General Box</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="hero">
+  <div class="overlay-text">
+    <h1>Contact Us</h1>
+  </div>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Us</a>
+  <a href="products.html">Products</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<div class="container">
+  <section>
+    <p><strong>Address:</strong> Pamutongan, Jubay, Liloan, Cebu, Philippines</p>
+    <p><strong>Email:</strong> sales.dgeneralbox@gmail.com / inquiry@dgeneralbox.com.ph</p>
+    <p><strong>Phone:</strong> (+63) 9XX-XXX-XXXX / (+63) 32-XXX-XXXX</p>
+
+    <h3>Feedback Form</h3>
+    <form onsubmit="handleFeedback(event)">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+</div>
+
+<footer>
+  <p>&copy; 2025 D' GENERAL BOX MANUFACTURING CORPORATION. All rights reserved.</p>
+</footer>
+
+<script>
+  function handleFeedback(event) {
+    event.preventDefault();
+    alert('Thank you for your feedback!');
+    event.target.reset();
+  }
+</script>
+
+</body>
+</html>

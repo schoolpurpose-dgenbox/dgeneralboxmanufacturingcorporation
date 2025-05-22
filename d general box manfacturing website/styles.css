@@ -1,0 +1,85 @@
+/* styles.css */
+* { box-sizing: border-box; }
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-color: #f4f1ec;
+  color: #333;
+}
+header.hero {
+  background: url('https://media.licdn.com/dms/image/v2/C4E12AQFgr-4UObSBog/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1621317284228?e=2147483647&v=beta&t=25x8kO_bdibOb0wojJxW41h1vv_monzxbJRCoOpe2BM') center/cover no-repeat;
+  color: #ffe3b4;
+  text-align: center;
+  padding: 120px 20px;
+  position: relative;
+}
+header.hero::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+header.hero .overlay-text {
+  position: relative;
+  z-index: 2;
+}
+header.hero h1 {
+  margin: 0;
+  font-size: 3em;
+  letter-spacing: 1px;
+}
+nav {
+  background-color: #573E2E;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 12px 0;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s;
+}
+nav a:hover {
+  color: #ffe3b4;
+}
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 40px 20px;
+}
+section {
+  background: #fff8ee;
+  margin-bottom: 40px;
+  padding: 30px;
+  border-left: 6px solid #573E2E;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+}
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+form button {
+  background-color: #573E2E;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: #775544;
+}

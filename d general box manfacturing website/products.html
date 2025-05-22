@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Products | D' General Box</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: Roboto', sans-serif
+      margin: 0;
+      background-color: #ffe3b4;
+      color: #333;
+    }
+
+    nav {
+      background-color: #573E2E;
+      padding: 12px 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    nav a:hover {
+      color: #ffe3b4;
+    }
+
+    .hero {
+      position: relative;
+      height: 350px;
+      background: url('https://www.fecc.com.my/wp-content/uploads/2020/01/corrugator-single-face.jpg') center/cover no-repeat;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #ffe3b4;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5); /* dark overlay */
+      z-index: 1;
+    }
+
+    .hero h1, .hero p {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .product-card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .product-info {
+      padding: 1rem;
+    }
+
+    .product-info h3 {
+      margin-top: 0;
+      font-size: 1.2rem;
+      color: #573E2E;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="hero">
+    <h1>Our Products</h1>
+    <p>Explore our range of high-quality corrugated packaging solutions</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="products.html">Products</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="container">
+    <div class="products-grid">
+
+      <!-- Product 1 -->
+      <div class="product-card">
+        <img src="https://www.bluerosepackaging.com/wp-content/uploads/2024/06/RSC-boxes-blog-3-300x261.jpg" alt="RSC Box">
+        <div class="product-info">
+          <h3>RSC (Regular Slotted Container)</h3>
+          <p>Industry-standard box design for general packaging needs.</p>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="product-card">
+        <img src="https://cdn11.bigcommerce.com/s-4yjajl9qi3/images/stencil/1280x1280/products/1374/2634/HSC-b-Product-Image__40029.1680620229.jpg?c=1" alt="HSC Box">
+        <div class="product-info">
+          <h3>HSC (Half Slotted Container)</h3>
+          <p>Open-top box type ideal for easy loading and storage.</p>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="product-card">
+        <img src="https://images-cdn.ubuy.co.in/633b90c0422c88091236e22c-lembar-kardus-bergelombang-sodaxx-qty.jpg" alt="Plain Boards">
+        <div class="product-info">
+          <h3>Plain Boards</h3>
+          <p>Custom-sized sheets for dividers, inserts, or packaging layers.</p>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="product-card">
+        <img src="https://www.fecc.com.my/wp-content/uploads/2020/01/corrugator-single-face.jpg" alt="Pads and Partitions">
+        <div class="product-info">
+          <h3>Pads and Partitions</h3>
+          <p>Protective dividers and pads for fragile or multiple items.</p>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="product-card">
+        <img src="https://www.innerpak.com/wp-content/uploads/2021/04/corrugated_box_partitions_6sizes_a_wht-scaled-920x1024.jpg" alt="Custom Boxes">
+        <div class="product-info">
+          <h3>Custom Boxes</h3>
+          <p>Tailored designs to meet your specific packaging needs.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 D' GENERAL BOX MANUFACTURING CORPORATION. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
